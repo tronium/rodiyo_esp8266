@@ -52,7 +52,7 @@ tmr.alarm(1, 100, 1,
 			end
 			)
 			svr:connect(SERVER_PORT, SERVER_IP)
-			gpio.trig(buttonPin, 'down', btnPressed)
+			gpio.trig(buttonPin, 'both', btnPressed)
 			print("Ready for action")
 		end
 	end
