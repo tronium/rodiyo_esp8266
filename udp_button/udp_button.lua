@@ -47,9 +47,9 @@ tmr.alarm(1, 100, 1,
 
 			svr=net.createConnection(net.UDP)
 			svr:on("receive",
-			function(s, d)
-				print(d)
-			end
+				function(s, d)
+					print(d)
+				end
 			)
 			svr:connect(SERVER_PORT, SERVER_IP)
 			gpio.trig(buttonPin, 'both', btnPressed)
